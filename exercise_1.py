@@ -25,17 +25,50 @@
 # else:
 #     print("You belongs to B group")
 
-buleano = True
-one = 0
+# buleano = True
+# one = 0
 
-while buleano == True:
-    if one < 100:
-        one += 1
-        print(one)
-    else:
-        buleano = False
+# while buleano == True:
+#     if one < 100:
+#         one += 1
+#         print(one)
+#     else:
+#         buleano = False
 
-for a in range(1,101):
-    print(a)
+# for a in range(1,101):
+#     print(a)
         
         
+# PYTHON program to find sum of first 
+# n natural numbers. 
+
+# Returns sum of first n natural 
+# numbers 
+# def findSum(): 
+#     n = int(input("Input: "))
+# 	sum = 0
+# 	x = 1
+# 	while x <=n : 
+# 		sum = sum + x 
+# 		x = x + 1
+# 	return sum
+
+
+# # Driver code 
+
+# n = 5
+# print findSum(n) 
+
+
+print("CONTADOR DE PARES E IMPARES")
+valores = int(input("¿Cuántos valores va a introducir? "))
+if valores < 0:
+    print("¡Imposible!")
+else:
+    pares = 0
+    for i in range(1, valores + 1):
+        numero = int(input(f"Escriba el valor {i}: "))
+        if numero % 2 == 0:
+            pares += 1
+print("Ha escrito",pares, "números pares y ",valores - pares, "números impares.")
+print("Gracias por su colaboración.")
